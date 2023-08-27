@@ -1,0 +1,237 @@
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.backgroundvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.viewport-header {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.viewport-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.a2:link{
+  color: rgb(114, 111, 111);
+  padding: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+/* h1 {
+  font-family: "Syncopate", sans-serif;
+  color: rgb(122, 121, 121);
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+} */
+/* h1 span {
+  display: block;
+  font-size: 10vw;
+  letter-spacing: -0.6rem;
+} */
+main {
+  background: black;
+  position: relative;
+  padding: 1rem;
+  margin-top: 100vh;
+}
+main::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -100vh;
+}
+main p {
+  color: white;
+  max-width: 1250px;
+  margin: 1rem auto;
+}
+
+.kmore {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #2e1010;
+	padding: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+#myBtn {
+
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #2e1010;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/*
+.scroll-div{
+  display: flex;
+}*/
+
+.scroll-div p{
+  background-color: orange;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.scroll1{
+  padding: 10px;
+  background-color: #304c9c;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.scroll1 pre{
+  padding: 8px;
+  color: white;
+  font-family: 'Lato';
+}
+
+.scroll2{
+  background-color: orange;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.scrollWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  /*display: none;*/
+  padding: 0;
+}
+.scroll1{
+  padding: 0;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(154, 234, 241, 0.3);
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*.prev:hover,
+.next:hover {
+  background-color: powderblue;
+}*/
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+

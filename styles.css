@@ -1,0 +1,501 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*
+.nav-links a:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links a:hover::after{
+    width: 100%;
+}
+*/
+/*
+div dropdown a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 50px;
+  margin: auto;
+}
+
+div dropdown a:hover {
+  background-color: #ddd;
+  color: black;
+}
+*/
+
+.prev {
+  background-color: #B0C4DE;
+  color: white;
+  border-radius: 50%;
+}
+
+.next {
+  background-color: #B0C4DE;
+  color: white;
+  border-radius: 50%;
+}
+
+#a1{
+    color: white;
+    font-weight: bold;
+}
+.main {
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+.navtoplist {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #304c9c;
+  color: white;
+}
+
+.navtoplinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+}
+.navorange {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  font-size: 0.99em;
+  background-color: orange;
+  color: white;
+}
+
+
+a:link, a:visited {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.main-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    flex: 0.02;
+    padding: 20px 10px 20px 10px;
+    width: 17%;
+    height: 12%;
+}
+.logo1{
+    flex: 0.01;
+    padding: 20px 10px 20px 10px;
+    /*float: right;*/
+    width: 9%;
+    height: 4%;
+}
+
+.banner2{
+  width: 100vw;
+}
+
+.banner2 img{
+  width: 100%;
+  object-fit: cover;
+}
+
+#coursesOffered{
+  min-height: 400px;
+  background-color: #2b2b2b;
+  padding: 1rem;
+}
+
+.coBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coBody div{
+  margin: 2rem;
+}
+
+.coBody h3{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.coTitle h1{
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.statisticsBody{
+  min-height: 20rem;
+  background: linear-gradient(0deg, rgba(19,58,119,.65), rgba(19,58,119,.65)), url('./7.png');
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+  object-fit: cover;
+  padding: 2rem;
+}
+
+.statisticsBody h2{
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
+.statisticsTitle{
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.statisticsTitle::after{
+    content: "";
+    width: 120px;
+    display: block;
+    height: 3px;
+    background: -webkit-linear-gradient(45deg,#2b579a,#000 80%);
+}
+
+.statisticsTitle h2{
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.sBodyItemsWrap{
+  margin: 2rem;
+}
+
+.sBodyItems{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sBodyCards{
+  width: 280px;
+  height: 163px;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.border{
+  border-right: 2px solid #fff;
+}
+
+.sBodyCards h3{
+  font-size: 26px;
+}
+
+.sBodyCards h1{
+  font-size: 48px;
+  font-weight: 200;
+}
+
+.masSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masBtn{
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  width: fit-content;
+  padding: 8px 24px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+.rTitle{
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rBody{
+  text-align: center;
+}
+
+.rTitle::after{
+  content: "";
+  width: 120px;
+  display: block;
+  height: 3px;
+  background: -webkit-linear-gradient(45deg,#2b579a,#000 80%);
+}
+
+.rTitle h2{
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.caCardWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caCards{
+  padding: 16px;
+  margin: 16px 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 196px;
+}
+
+.caTitle h2{
+  font-size: 36px;
+  font-family: "Lato", sans-serif;
+  color: #2b579a;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0 24px;
+}
+
+.caCards img{
+  height: 90px;
+  padding: 0 0 16px;
+}
+
+.caCards h4{
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.caSectionBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0 0;
+}
+
+.caBtn{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 18px;
+    background-color: #2b579a;
+    width: fit-content;
+    padding: 8px 48px;
+    border-radius: 5px;
+}
+
+
+#acc{
+  display: flex;
+  margin: 5rem 0;
+}
+
+.accTitle{
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.accTitle h1{
+    color: #2b579a;
+    font-family: "Lato", sans-serif;
+    font-size: 38px;
+}
+
+.accTitle h2{
+  color: #000;
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+
+.accBody{
+  display: flex;
+}
+
+.accCard{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 10rem;
+  width: 7rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.accCard h1{
+  margin: 1rem 0 0 0;
+}
+
+.paTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* .paTitle span{
+  display:block;
+  width:8%;
+  border-top: 4px solid #000;
+} */
+
+.paTitle::after{
+    content: "";
+    width: 120px;
+    display: block;
+    height: 3px;
+    background: -webkit-linear-gradient(45deg,#2b579a,#000 80%);
+}
+
+.paTitle h1{
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.paBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paCard{
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 10px;
+  margin: 2rem;
+}
+
+.paCard img{
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.paCard h1{
+  font-size: 20px;
+  margin: 6px 0 8px 0;
+}
+
+.paCard h5{
+  font-size: 14px;
+}
+
+#footer{
+  display: flex;
+  font-family: "Lato",sans-serif;
+  color: white;
+  background-color: #2b579a;
+  padding: 2rem 8rem;
+  margin-top: 3rem;
+}
+
+.sec1{
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.sec1 h2{
+  font-weight: 400;
+  font-size: 24px;
+  margin: 1rem 0;
+}
+
+.sec1 h3{
+  font-weight: 400;
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.sec1 h4{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.secBody{
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.secBody h3{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.secBody p{
+  font-size: 14px;
+  padding: 0 0 0 24px;
+}
+
+.sec2 h2{
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.sec3{
+  padding: 0 3rem;
+}
+
+.sec2 h3{
+  padding: 0 0 0 24px;
+  margin: 12px 0;
+}
+
+.sec3 h2{
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 12px 0;
+}
+
+.sec3 h5{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0;
+}
